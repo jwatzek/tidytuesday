@@ -24,7 +24,7 @@ d2 = d %>%
 p = ggplot(d2, aes(values = votes/25, x = votes, fill = vote_rank)) +
     facet_wrap(~ bird_breed, ncol = 1, strip.position = 'left') +
     geom_waffle(n_rows = 10, col = 'grey20', size = .15) +
-    scale_x_continuous(breaks = seq(0, 1000, 500)/25, labels = seq(0, 1000, 500), expand = expand_scale(mult = c(0, .05))) +
+    scale_x_continuous(breaks = seq(0, 1000, 500)/25, labels = seq(0, 1000, 500)*10, expand = expand_scale(mult = c(.1, .05))) +
     scale_y_continuous(expand = expand_scale(mult = .2)) +
     scale_fill_viridis_d('Vote Rank', option = 'plasma') +
     coord_equal() +
