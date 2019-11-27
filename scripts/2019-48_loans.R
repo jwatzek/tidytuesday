@@ -56,7 +56,7 @@ p2 = ggplot(d3b, aes(yearQ, amount_B, fill = year, group = method)) +
     geom_bar(aes(fill = year, alpha = method), stat = 'identity', col = 'black', width = .8) +
     geom_text(aes(label = lab3b), data = d3a, size = 3.2, vjust = -.8) +
     expand_limits(y = 0) +
-    scale_y_continuous(labels = dollar_format(suffix = 'B'), expand = expand_scale(mult = c(0, .7))) +
+    scale_y_continuous(labels = dollar_format(suffix = 'B'), expand = expand_scale(mult = c(0, .07))) +
     scale_x_discrete(breaks = c('2016 Q2', '2017 Q2', '2018 Q2'), labels = year_labs) +
     scale_fill_viridis_c() +
     scale_alpha_discrete('Recovery Method') +
