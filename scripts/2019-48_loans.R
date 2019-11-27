@@ -49,7 +49,7 @@ p1 = ggplot(d3a, aes(yearQ, Inventory, group = 1)) +
     scale_x_discrete(breaks = c('2016 Q2', '2017 Q2', '2018 Q2'), labels = year_labs) +
     scale_fill_viridis_c() +
     labs(x = '', y = 'Total Outstanding Debt', title = 'U.S. Student Loans', 
-         subtitle = 'The total amount of outstanding debt is more than 2.5 times higher than it was at the\nend of 2015.')
+         subtitle = 'The total amount of outstanding debt is more than 2.5 times higher than it\nwas at the end of 2015.')
 
 p2 = ggplot(d3b, aes(yearQ, amount_B, fill = year, group = method)) +
     geom_bar(fill = 'white', stat = 'identity', width = .8) +
@@ -61,7 +61,7 @@ p2 = ggplot(d3b, aes(yearQ, amount_B, fill = year, group = method)) +
     scale_fill_viridis_c() +
     scale_alpha_discrete('Recovery Method') +
     labs(x = '', y = 'Total Repaid', title = '', 
-         subtitle = 'Only a small percentage of the total outstanding debt is collected. Most is collected\nthrough rehabilitation.',
+         subtitle = 'Only a small percentage of the total outstanding debt is collected. Most is\ncollected through rehabilitation.',
          caption = 'Data by U.S. Department of Education\n#TidyTuesday • @watzoever') +
     guides(fill = F)
 
