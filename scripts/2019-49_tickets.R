@@ -5,6 +5,7 @@ library(ggtext)
 library(osmdata)
 library(sf)
 library(ggpointdensity)
+library(beepr)
 
 d = read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-12-03/tickets.csv')
 # write_csv(d, 'data/2019-49_tickets.csv')
@@ -79,5 +80,5 @@ system.time(ggsave('plots/2019-49_tickets_meters.png', p2, width = 10, height = 
 beep()
 
 p3 = p + p2
-system.time(ggsave('plots/2019-49_tickets_both.png', p3, width = 20, height = 12))
+system.time(ggsave('plots/2019-49_tickets_both.png', p3, width = 20))
 beep()
