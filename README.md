@@ -2,6 +2,10 @@
 
 Here are my contributions to [#TidyTuesday](https://github.com/rfordatascience/tidytuesday), a weekly data wrangling/visualization challenge with real-world data sets.
 
+## 2019-49 [Philadelphia Parking Tickets](https://www.opendataphilly.org/dataset/parking-violations)
+
+![tickets](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2019-49_tickets.png)
+
 ## 2019-48 [U.S. Student Loan Debt](https://studentaid.ed.gov/sa/about/data-center/student/default)
 
 ![loans](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2019-48_loans.png)
