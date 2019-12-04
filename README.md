@@ -4,7 +4,7 @@ Here are my contributions to [#TidyTuesday](https://github.com/rfordatascience/t
 
 ## 2019-49 [Philadelphia Parking Tickets](https://www.opendataphilly.org/dataset/parking-violations)
 
-![tickets](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2019-49_tickets.png)
+![tickets](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2019-49_tickets_both.png)
 
 ## 2019-48 [U.S. Student Loan Debt](https://studentaid.ed.gov/sa/about/data-center/student/default)
 
