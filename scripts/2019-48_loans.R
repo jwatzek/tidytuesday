@@ -18,8 +18,7 @@ d = read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/mast
 # d %>% filter(!complete.cases(.))
 
 d2 = d %>% 
-    mutate_at(vars(starting:wage_garnishments), function(.) ./1e9) %>%
-    mutate_at(vars(starting:wage_garnishments), replace_na, 0) %>% 
+    mutate_at(vars(starting:wage_garnishments), function(.) replace_na(./1e9, 0)) %>%
     mutate(inventory = starting + added, yearQ = str_c('20', year, ' Q', quarter)) %>% 
     pivot_longer(total:inventory, names_to = 'method', values_to = 'amount_B') %>% 
     mutate(method = str_to_title(str_replace_all(method, '_', ' '))) %>% 
@@ -51,7 +50,7 @@ p1 = ggplot(d3a, aes(yearQ, Inventory, group = 1)) +
     labs(x = '', y = 'Total Outstanding Debt', title = 'U.S. Student Loans', 
          subtitle = 'The total amount of outstanding debt is more than 2.5 times higher than it\nwas at the end of 2015.')
 
-p2 = ggplot(d3b, aes(yearQ, amount_B, fill = year, group = method)) +
+p2 = ggplot(d3b, aes(yearQ, amount_B, fill = year)) +
     geom_bar(fill = 'white', stat = 'identity', width = .8) +
     geom_bar(aes(fill = year, alpha = method), stat = 'identity', col = 'black', width = .8) +
     geom_text(aes(label = lab3b), data = d3a, size = 3.2, vjust = -.8) +
@@ -65,8 +64,6 @@ p2 = ggplot(d3b, aes(yearQ, amount_B, fill = year, group = method)) +
          caption = 'Data by U.S. Department of Education\n#TidyTuesday • @watzoever') +
     guides(fill = F)
 
-
-p1 + p2 + plot_layout(ncol = 1) + plot_annotation(theme = theme(plot.margin = unit(c(2, 2, 2, 2), 'cm')))
-
+p1 / p2 + plot_annotation(theme = theme(plot.margin = unit(c(2, 2, 2, 2), 'cm')))
 ggsave('plots/2019-48_loans.png', width = 10, height = 10)
 
