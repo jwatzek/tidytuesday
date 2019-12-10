@@ -31,7 +31,7 @@ d = gapminder %>%
 # animated
 p = ggplot(d, aes(fertility, life_expectancy, fill = continent, size = population, group = country)) +
     geom_point(shape = 21, alpha = .8) +
-    scale_fill_simpsons(guide = F) +
+    scale_fill_simpsons(name = '', guide = F) +
     scale_size(range = c(4, 30), guide = F) +
     scale_x_continuous(breaks = seq(2, 8, 2)) +
     scale_y_continuous(breaks = seq(20, 80, 20)) +
