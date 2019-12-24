@@ -13,11 +13,9 @@ d = songs %>%
     mutate(n = n_distinct(year)) %>% 
     arrange(desc(year), desc(n))
 
-num = length(unique(d$song))
-
 d2 = tibble(
     song = unique(d$song), 
-    image = rep(c('plots/christmas-ball-red.png', 'plots/christmas-ball-green.png'), length.out = num)
+    image = rep(c('plots/christmas-ball-red.png', 'plots/christmas-ball-green.png'), length.out = length(unique(d$song)))
     )
 
 d3 = left_join(d, d2) %>% 
@@ -28,8 +26,7 @@ labs = tibble(
     x = c(2011.8, 2001),
     y = c(11, 29),
     label = c('9 Christmas songs made\nthe Top 100 in 2011.', 
-              "Mariah Carey's song made the\nTop 100 8 times from 2000-2017\nand topped the list in Dec 2019\n(not shown).")
-    )
+              "Mariah Carey's song made the\nTop 100 8 times from 2000-2017\nand topped the list in Dec 2019\n(not shown)."))
 
 ggplot(d3, aes(year, song)) +
     geom_image(aes(image = image), size = .03) +
