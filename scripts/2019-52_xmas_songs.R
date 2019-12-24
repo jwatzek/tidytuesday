@@ -1,8 +1,6 @@
 library(tidyverse)
 library(cowplot)
 library(ggimage)
-library(glue)
-library(ggtext)
 
 songs = read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-12-24/christmas_songs.csv')
 # write_csv(songs, 'data/2019-52_xmas_songs.csv')
@@ -18,9 +16,7 @@ d = songs %>%
 num = length(unique(d$song))
 
 d2 = tibble(
-    # col = rep(c('#e6434d', '#1b7a24'), length.out = num),
     song = unique(d$song), 
-    # song2 = glue('<b style="color:{col};">{song}</b>'),
     image = rep(c('plots/christmas-ball-red.png', 'plots/christmas-ball-green.png'), length.out = num)
     )
 
@@ -40,7 +36,6 @@ ggplot(d3, aes(year, song)) +
     geom_label(data = labs, aes(label = label, x = x, y = y), hjust = 0, size = 4.7, family = 'Roboto', label.size = 0) +
     geom_curve(x = 2001.5, xend = 2000.5, y = 31, yend = 32, arrow = arrow(length = unit(.2, 'cm'))) +
     geom_curve(x = 2011.5, xend = 2011, y = 11, yend = 13, arrow = arrow(length = unit(.2, 'cm')), curvature = -.5) +
-    # scale_y_discrete(labels = rev(d2$song2)) +
     labs(x = '', y = '', 
          title = 'Billboard Top 100 • Christmas Songs', 
          subtitle = 'Ornaments indicate that a song made the Top 100 that year.',
