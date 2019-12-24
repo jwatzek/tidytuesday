@@ -2,6 +2,10 @@
 
 Here are my contributions to [#TidyTuesday](https://github.com/rfordatascience/tidytuesday), a weekly data wrangling/visualization challenge with real-world data sets.
 
+## 2019-52 [Christmas songs](https://adashofdata.com/2014/12/21/how-christmas-songs-have-evolved-over-time/)
+
+![xmas songs](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2019-52_xmas_songs.png)
+
 ## 2019-51 [Adoptable Dogs](https://pudding.cool/2019/10/shelters/)
 
 ![dogs](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2019-51_dogs.png)
