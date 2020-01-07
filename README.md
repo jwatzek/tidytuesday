@@ -6,6 +6,8 @@ Here are my contributions to [#TidyTuesday](https://github.com/rfordatascience/t
 
 ![aus fires](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2020-02_aus_fires.png)
 
+![aus fires 2](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2020-02_aus_fires2.png)
+
 ***
 
 ## 2019-52 [Christmas Songs](https://adashofdata.com/2014/12/21/how-christmas-songs-have-evolved-over-time/)

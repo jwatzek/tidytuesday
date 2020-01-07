@@ -46,5 +46,5 @@ ggplot(d, aes(long, lat)) +
     xlim(112, 156.25) + ylim(-44.5, -10) +
     theme_map()
 
-# ggsave('plots/2020-02_aus_fires.png', width = 8, height = 6.4, bg = 'transparent')
+ggsave('plots/2020-02_aus_fires.png', width = 8, height = 6.4, bg = 'transparent')
 
