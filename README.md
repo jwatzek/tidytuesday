@@ -2,6 +2,10 @@
 
 Here are my contributions to [#TidyTuesday](https://github.com/rfordatascience/tidytuesday), a weekly data wrangling/visualization challenge with real-world data sets.
 
+## 2020-04 [Song Genres](https://www.kaylinpavlik.com/classifying-songs-genres/)
+
+![song genres](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2020-04_song_genres.png)
+
 ## 2020-03 [Passwords](https://wiki.skullsecurity.org/Passwords)
 
 ![passwords](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2020-03_passwords.png)
