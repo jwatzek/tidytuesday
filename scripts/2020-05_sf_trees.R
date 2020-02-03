@@ -27,7 +27,7 @@ ggplot(d3, aes(year2, n, fill = sp_common)) +
     ggforce::geom_mark_ellipse(aes(filter = idx == 1 & year == 1995, label = sp_common), fill = NA, label.fontsize = 10, 
                                description = 'The most commonly planted species overall') +
     ggforce::geom_mark_ellipse(aes(filter = idx == 2 & year == 1985, label = sp_common), fill = NA, label.fontsize = 10, 
-                               description = 'Vying for 2nd place and a name change') +
+                               description = 'In 2nd place overall and vying for a name change') +
     ggforce::geom_mark_ellipse(aes(filter = idx == 3 & year == 2008, label = sp_common), fill = NA, label.fontsize = 10, 
                                description = 'With 489 trees, the most planted trees in any year', label.buffer = unit(.2, 'cm')) +
     scale_size_continuous(range = c(4, .5), guide = F) +
