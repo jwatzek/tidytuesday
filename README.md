@@ -2,6 +2,10 @@
 
 Here are my contributions to [#TidyTuesday](https://github.com/rfordatascience/tidytuesday), a weekly data wrangling/visualization challenge with real-world data sets.
 
+## 2020-06 [NFL Attendance](https://www.casino.org/record-and-attendance/)
+
+![nfl attendance](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2020-06_nfl_attendance.png)
+
 ## 2020-05 [San Francisco Trees](https://www.sfweekly.com/news/feature/trees-of-life/)
 
 ![sf trees](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2020-05_sf_trees.png)
