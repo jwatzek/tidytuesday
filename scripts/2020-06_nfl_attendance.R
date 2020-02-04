@@ -18,7 +18,7 @@ labs = tibble(
     team2 = c('San Diego / LA Chargers', 'Dallas Cowboys', 'Arizona Cardinals'),
     year = c(2017, 2009, 2006),
     location = factor(rep('HOME', 3), levels = c('HOME', 'AWAY')),
-    lab = 1:3,
+    lab = 3:1,
     col = c('black', 'white', 'black')
 )
 
@@ -36,9 +36,9 @@ ggplot(d2, aes(year, fct_rev(team2))) +
          subtitle = '<strong>Attendance for home games varies much more than that of away games.</strong><br/><br/>
          <span style="font-size: 10pt;">
          Some notes:<br/><br/>
-         (1) The Chargers moved to Los Angeles.<br/>
-         (2) The Cowboys moved into the AT&T Stadium.<br/>
-         (3) The Cardinals moved into the State Farm Stadium.</span>', 
+         (1) The Cardinals moved into the State Farm Stadium in 2006.<br/>
+         (2) The Cowboys moved into the AT&T Stadium in 2009.<br/>
+         (3) The Chargers moved to Los Angeles in 2017.</span>', 
          caption = 'Data by Pro Football Reference\n #TidyTuesday | @watzoever') +
     cowplot::theme_cowplot() +
     theme(text = element_text(family = 'Karla'),
