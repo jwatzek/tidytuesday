@@ -21,7 +21,7 @@ ggplot(d2, aes(mo)) +
     expand_limits(y = 0) +
     labs(x = '', y = 'Average Daily Rate',
      title = 'Hotel Bookings', 
-     subtitle = '**Average daily rate for two hotels in Portugal from July 2015 to August 2017.**<br/>The average daily rate increased for both hotels from year to year, but the <br/>resort hotel in the Algarve has more pronounced seasonal fluctuations <br/>than the city hotel in Lisbon.', 
+     subtitle = '**Average daily rate for two hotels in Portugal from July 2015 to August 2017.**<br/>The average daily rate increased for both hotels from year to year, but the <br/>resort hotel in the Algarve has more pronounced seasonal fluctuations than<br/>the city hotel in Lisbon.', 
      caption = 'Data by Antonio, de Almeida, & Nunes (2019) *Data in Brief* **22**:41-49<br/> #TidyTuesday • @watzoever') +
     cowplot::theme_minimal_hgrid() +
     theme(text = element_text(family = 'Source Sans Pro'),
