@@ -2,6 +2,10 @@
 
 Here are my contributions to [#TidyTuesday](https://github.com/rfordatascience/tidytuesday), a weekly data wrangling/visualization challenge with real-world data sets.
 
+## 2020-08 [Food's Carbon Footprint](https://www.nu3.de/blogs/nutrition/food-carbon-footprint-index-2018)
+
+![food_carbon](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2020-08_food_carbon.png)
+
 ## 2020-07 [Hotel Bookings](https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib5)
 
 ![hotels](https://raw.githubusercontent.com/jwatzek/tidytuesday/master/plots/2020-07_hotels.png)
